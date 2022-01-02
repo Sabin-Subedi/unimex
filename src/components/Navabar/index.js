@@ -50,16 +50,14 @@ function NavigationBar() {
                 id="Docs"
                 align="end"
               >
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
+                <NavDropdown.Item className="pt-2" href="#action/3.2">
+                  Stake UMX
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">
-                  Something
+                  Stake DGN
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
+                <NavDropdown.Item href="#action/3.3">
+                  Stake SpaceX
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>

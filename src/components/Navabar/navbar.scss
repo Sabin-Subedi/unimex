@@ -34,7 +34,18 @@
     }
   }
   .dropdown-menu {
-    background-color: #53989f;
+    background-color: transparent !important;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: #53989f;
+      position: absolute;
+      border-radius: 8px;
+      opacity: 0.23;
+      z-index: -1;
+    }
 
     .dropdown-item {
       font-weight: 700 !important;

@@ -15,11 +15,9 @@ const cardData = [
       background:
         "radial-gradient(50% 50% at 50% 50%, #F9FFB1 0%, rgba(78, 176, 1, 0) 100%)",
       mixBlendMode: "screen",
-      // opacity: 0.5,
       filter: "blur(88px)",
     },
-    buttonColor:
-      "linear-gradient(0deg, rgba(240, 255, 65, 0.72), rgba(240, 255, 65, 0.72)), radial-gradient(49.67% 100% at 50% 100%, rgba(198, 255, 126, 0.4) 0%, rgba(105, 222, 167, 0) 100%), linear-gradient(270deg, rgba(105, 222, 167, 0.6) 0%, rgba(105, 222, 167, 0.42) 100%)",
+    buttonColor: "button_green",
   },
   {
     image: "apemex.svg",
@@ -33,8 +31,7 @@ const cardData = [
       // opacity: 0.5,
       filter: "blur(88px)",
     },
-    buttonColor:
-      "radial-gradient(89.12% 170% at 50% 100%, rgba(255, 245, 0, 0.4) 0%, rgba(255, 166, 84, 0) 100%), linear-gradient(0deg, #FFD336, #FFD336), radial-gradient(49.67% 100% at 50% 100%, rgba(255, 173, 126, 0.4) 0%, rgba(255, 229, 92, 0) 100%), linear-gradient(270deg, rgba(105, 222, 167, 0.5) 0%, rgba(105, 222, 167, 0.35) 100%)",
+    buttonColor: "button_brown",
   },
   {
     image: "farm.svg",
@@ -47,8 +44,7 @@ const cardData = [
       mixBlendMode: "screen",
       filter: "blur(88px)",
     },
-    buttonColor:
-      "radial-gradient(89.12% 170% at 50% 100%, rgba(255, 202, 66, 0.4) 0%, rgba(255, 166, 84, 0) 100%), linear-gradient(0deg, #FF7A41, #FF7A41), radial-gradient(49.67% 100% at 50% 100%, rgba(255, 173, 126, 0.4) 0%, rgba(255, 229, 92, 0) 100%), linear-gradient(270deg, rgba(105, 222, 167, 0.5) 0%, rgba(105, 222, 167, 0.35) 100%)",
+    buttonColor: "button_chocolate",
   },
 ];
 
@@ -115,16 +111,11 @@ export default function LandingScreen() {
                 </div>
                 <h4 className="text-white">{card.name}</h4>
                 <p className={card.subTitleColor}>{card.subTitle}</p>
-                <Button
-                  className="text-white fw-bold mt-4"
-                  style={{
-                    backgroundBlendMode: "hue, normal, normal",
-                    boxShadow: "0px 9px 10px rgba(0, 0, 0, 0.1)",
-                  }}
-                  color={card.buttonColor}
+                <button
+                  className={`btn text-white px-4 py-2 fw-bold mt-4  ${card.buttonColor}`}
                 >
                   Learn more
-                </Button>
+                </button>
               </Col>
             ))}
           </Row>
