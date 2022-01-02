@@ -88,17 +88,17 @@ export default function LandingScreen() {
 
       <section className="py-5 pb-0 pb-md-5 my-5 mb-0 mb-md-5 card_section ">
         <Container className="py-5 px-5">
-          <Row className="gap-3 align-items-center px-md-5">
+          <Row xs={1} md={3} className="align-items-center px-md-4">
             {cardData.map((card, index) => (
               <Col
                 key={index}
-                className="d-flex flex-column align-items-center mb-3 mb-md-0"
+                className="d-flex flex-column align-items-center mb-5 mb-md-0"
               >
                 <div className="position-relative w-full d-flex align-item-center justify-content-center w-full">
                   <Image
                     src={`/image/${card.image}`}
                     alt="Degen"
-                    className="card_img"
+                    className="w-full"
                   />
                   <div
                     className="position-absolute top-0 left-0 right-0 bottom-0 w-half"
