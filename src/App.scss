@@ -1,0 +1,38 @@
+.background {
+  background-color: #000;
+  background-image: url("./assets/background.svg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg_green {
+  background: #53989f;
+}
+
+.bg_green_dark {
+  background: #3e7f8c;
+}
+
+.color_green_dark {
+  color: #3e7f8c;
+}
+
+.color_green_light {
+  color: #cfff9e !important;
+}
+
+.color_brown_light {
+  color: #ffd39e;
+}
+
+.color_green {
+  color: #aeffd9;
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.w-half {
+  width: 50% !important;
+}

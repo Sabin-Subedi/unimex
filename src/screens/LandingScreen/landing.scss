@@ -1,0 +1,55 @@
+.background {
+  min-height: 100vh !important;
+  position: absolute;
+  width: 100%;
+}
+
+.hero_section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+
+  .hero_image {
+    width: 75%;
+  }
+
+  .hero_text {
+    max-width: 90%;
+  }
+
+  .hero_overlay_image {
+    background: url("../../assets/Vector.svg");
+    height: 10vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: 10;
+  }
+}
+
+.card_section {
+  .bottom_overlay_image {
+    background: url("../../assets/bootm.svg");
+    height: 40vh;
+    width: 100%;
+    background-repeat: no-repeat;
+
+    background-position: top;
+    z-index: 10;
+    margin-top: -4rem;
+
+    @media screen and (max-width: 768px) {
+      height: 30vh;
+      background-size: contain;
+    }
+  }
+}
+
+.item {
+  z-index: 10 !important;
+}
+
+.card_img {
+  width: 100%;
+  z-index: 10;
+}
